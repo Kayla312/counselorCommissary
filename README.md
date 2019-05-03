@@ -1,37 +1,20 @@
-## Welcome to GitHub Pages
+# Counselor Commissary
 
-You can use the [editor on GitHub](https://github.com/Kayla312/counselorCommissary/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+## Creating a storefront app with Node.js and MySQL. The app will take in orders from customers and deplete stock from the store's inventory.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Supporting Files
+* `schema.sql`
+- Stores MySQL scripts to be excuted on MySQL Workbench.
+- Introduces required database, tables, columns and data types we will use for the app
+* Database: commissary_db
+* Tables: products
+* `commissaryCustomer.js`
+- Node application handles the orders from customers and depletes stock from the store's inventory
 
-### Markdown
+## Initialize the Project
+* run command: `npm init` or `npm init -y` (by default)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Kayla312/counselorCommissary/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+## Install required modules
+* run command:[npm i request](https://www.npmjs.com/package/request)
+* run command:[npm i inquirer](https://www.npmjs.com/package/inquirer/v/5.0.1)
+* run command:[npm i mysql](https://www.npmjs.com/package/mysql)
