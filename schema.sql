@@ -4,7 +4,7 @@ CREATE database commissary_db;
 USE commissary_db;
 
 CREATE TABLE products (
-  ID INT AUTO_INCREMENT NOT NULL,
+  ID INT AUTO_INCREMENT,
   product_name VARCHAR(100) NOT NULL,
   department_name VARCHAR(100)NOT NULL,
   price DECIMAL(10,2) NOT NULL,
