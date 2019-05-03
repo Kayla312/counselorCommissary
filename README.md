@@ -15,6 +15,6 @@
 * run command: `npm init` or `npm init -y` (by default)
 
 ## Install required modules
-* run command:[npm i request](https://www.npmjs.com/package/request)
-* run command:[npm i inquirer](https://www.npmjs.com/package/inquirer/v/5.0.1)
-* run command:[npm i mysql](https://www.npmjs.com/package/mysql)
+* run command: [npm i request](https://www.npmjs.com/package/request)
+* run command: [npm i inquirer](https://www.npmjs.com/package/inquirer/v/5.0.1)
+* run command: [npm i mysql](https://www.npmjs.com/package/mysql)
