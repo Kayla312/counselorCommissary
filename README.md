@@ -2,6 +2,8 @@
 
 ## Creating a storefront app with Node.js and MySQL. The app will take in orders from customers and deplete stock from the store's inventory.
 
+### Functional Process of App
+
 ## Supporting Files
 * `schema.sql`
 - Stores MySQL scripts to be excuted on MySQL Workbench.
