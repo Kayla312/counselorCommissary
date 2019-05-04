@@ -26,11 +26,17 @@ var connection = mysql.createConnection({
       console.error("YOU ARE HAVING THESE ISSUES WITH THE CONNECTION " + err);
     }
     // Section to show there has been a sho hit and a friendly welcome
-    console.log("Welcome to the Councelor Commissary");
+    console.log("Welcome to the...");
+    // console.log(" _______  _____  _     _ __   _ _______ _______         _____   ______      _______  _____  _______ _______ _____ _______ _______ _______  ______ __   __");
+    // console.log(" |       |     | |     | | \  | |       |______ |      |     | |_____/       |       |     | |  |  | |  |  |   |   |______ |______ |_____| |_____/   \_/  ");
+    // console.log(" |_____  |_____| |_____| |  \_| |_____  |______ |_____ |_____| |    \_        |_____  |_____| |  |  | |  |  | __|__ ______| ______| |     | |    \_    |   ");
+    console.log("+-+-+-+-+-+-+-+-+-+    +-+-+-+-+-+-+-+-+-+-+");
+    console.log("|C|o|u|n|c|e|l|o|r|    |C|o|m|m|i|s|s|a|r|y|");
+    console.log("+-+-+-+-+-+-+-+-+-+    +-+-+-+-+-+-+-+-+-+-+");
     console.log("");
     console.log("");
     // Friendly greeting about the store and sales
-    console.log("These are our products currently for sale! Take a peek and see if anthing is appealing!")
+    console.log("These are the products currently for sale! Take a peek and see if anthing is appealing!")
     console.log("");
     console.log("");
     displayAll();
@@ -111,7 +117,7 @@ function howManyYouWant(product) {
 function buyThatThangGuh(product, quantity) {
   connection.query(
     "UPDATE products SET ? WHERE ?",
-    [{stock_quantity: quantity}, {id: product.id}],
+    [{stock_quantity: product.stock_quantity - quantity}, {id: product.id}],
     function(err, res){
       console.log('Response Post Purchase', res)
 
