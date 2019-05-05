@@ -140,7 +140,7 @@ function buyThatThangGuh(product, quantity) {
       // console.log("");
       // console.log("");
 
-      // displayAll();
+      displayAll();
     }
   );
 }
